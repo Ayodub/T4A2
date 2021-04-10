@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/style2.css">
+        
+    </head>
+    <body>
+      <div class="signin">
+         <form action="/7" class="text-center" method="POST" >
+          {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+             <h2>Sign In</h2>
+             <h3>The following characters are banned: White-Spaces </h3>
+<br></br>
+             <input type="text" name="username" class="mt-3 mx-auto"  placeholder="Enter Username" required>
+             <input type="password" name="password" class="mx-auto" placeholder="Enter Password" required>
+             <button class="btn">Login</button>
+         </form>
+      </div>
+    </body>
+</html>

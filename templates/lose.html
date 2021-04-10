@@ -1,0 +1,44 @@
+<!-- <html>
+    <head>
+        <title>Guess the number: You lose!</title>
+    </head>
+    <body>
+        <h1>Guess the number!</h1>
+        <p>Sorry, {{ guess }} is incorrect. My guess was {{ session['answer'] }}.</p>
+        <p><a href="{{ url_for('index') }}">Play again</a></p>
+    </body>
+</html> -->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess the Number</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-danger">Incorrect!</h1>
+        <div class="userInput">
+			<input type="text" class="danger"  id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')" readonly >
+			<input type="text" class="danger" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')" readonly>
+			<input type="text" class="danger" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')" readonly>
+			<input type="text" class="danger" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')" readonly>
+            <input type="text" class="danger" id="fifth" maxlength="1" readonly>
+        </div>
+        <input type="text" name="guess" id="guess" value="{{session['answer']}}">
+        <p><a href="{{ url_for('index') }}" class="text-danger">Play again</a></p>
+
+    </div>
+    <script>
+        var value = document.getElementById("guess").value;
+        document.getElementById("ist").value = value.charAt(0)
+        document.getElementById("sec").value = value.charAt(1)
+        document.getElementById("third").value = value.charAt(2)
+        document.getElementById("fourth").value = value.charAt(3)
+        document.getElementById("fifth").value = value.charAt(4)
+
+
+    </script> 
+</body>
+</html>

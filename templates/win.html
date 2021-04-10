@@ -1,0 +1,43 @@
+<!-- <html>
+    <head>
+        <title>Guess the number: You win!</title>
+    </head>
+    <body>
+        <h1>Guess the number!</h1>
+        <p>Congratulations, {{ session['answer'] }} is the correct number.</p>
+        <p><a href="{{ url_for('index') }}">Play again</a></p>
+    </body>
+</html> -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guess the Number</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-success">Success!</h1>
+        <div class="userInput">
+			<input type="text" class="success"  id='ist' maxlength="1"  readonly >
+			<input type="text" class=" success" id="sec" maxlength="1"  readonly>
+			<input type="text" class="success" id="third" maxlength="1"  readonly>
+			<input type="text" class="success" id="fourth" maxlength="1"  readonly>
+            <input type="text" class="success" id="fifth" maxlength="1" readonly>
+        </div>
+        <input type="text" name="guess" id="guess" value="{{session['answer']}}">
+        <p><a href="{{ url_for('index') }}" class="text-success">Play again</a></p>
+
+    </div>
+     <script>
+         var value = document.getElementById("guess").value;
+        document.getElementById("ist").value = value.charAt(0)
+        document.getElementById("sec").value = value.charAt(1)
+        document.getElementById("third").value = value.charAt(2)
+        document.getElementById("fourth").value = value.charAt(3)
+        document.getElementById("fifth").value = value.charAt(4)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<titleEnter the One Time Password you received</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+	<div class="container">
+        {% if guess %}
+		<h1 class="text-danger">Incorrect</h1>
+      
+        {% else %}
+		<h1>Enter the One Time Password you received</h1>
+
+        {% endif %}
+        <form action="" onsubmit="form_submit()">
+        <div class="userInput">
+			<input type="text" class="{% if guess %} danger {% endif %}"  id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')" required>
+			<input type="text" class="{% if guess %} danger {% endif %}" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')" required>
+			<input type="text" class="{% if guess %} danger {% endif %}" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')" required>
+			<input type="text" class="{% if guess %} danger {% endif %}" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')" required>
+            <input type="text" class="{% if guess %} danger {% endif %}" id="fifth" maxlength="1" required>
+        </div>
+        <input type="text" name="guess" id="guess">
+		<button class="{% if guess %} danger {% endif %}">CONFIRM</button>
+    </form>
+    </div>
+    <script>
+        function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+		}
+        function form_submit(){
+            document.getElementById("guess").value = document.getElementById("ist").value+document.getElementById("sec").value+document.getElementById("third").value+document.getElementById("fourth").value+document.getElementById("fifth").value
+         
+        }
+    </script>
+</body>
+</html>
