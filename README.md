@@ -15,3 +15,15 @@ The Server Side Template challenge is simply a sandbox environment to play with 
 
 If you are unsure what to do you can find some suggestions here:
 https://github.com/swisskyrepo/PayloadsAllTheThings
+
+
+List of dependencies:
+click>=7.1.2
+Flask>=1.1.2
+itsdangerous>=1.1.0
+Jinja2>=2.11.2
+lxml>=4.5.2
+MarkupSafe>=1.1.1
+pycryptodome>=3.9.8
+Werkzeug>=1.0.1
+Flask-Migrate>=2.0.2
