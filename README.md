@@ -1,5 +1,8 @@
 README.md
 
+Trello board for project management can be found here:
+https://trello.com/b/QnpZosBC/leaky-flask
+
 
 Navigate to:
 http://3.88.53.207:4000/
