@@ -1,5 +1,7 @@
 Link to Trello Board:
-https://trello.com/b/QnpZosBC/leaky-flask
+ https://trello.com/b/QnpZosBC/leaky-flask
+
+Navigate here to see deployed application:  http://3.88.53.207:4000/
 
 **R1)**
 
