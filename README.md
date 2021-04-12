@@ -54,13 +54,13 @@ This website will be deployed to a custom domain via Amazon Web Services.
 
 **Data Flow Diagram:**
 
-![image](resources/DFD.png)
+![image](docs/DFD.png)
 
 **R3)**
 
 **Application Architecture Diagram:**
 
-![image](resources/AAD.png)
+![image](docs/AAD.png)
 
 **R4)**
 
@@ -82,38 +82,38 @@ As a user, I want the ability to test my custom software against the vulnerable 
 
 Homepage:
 
-![image](resources/homepage.png)
+![image](docs/homepage.png)
 
 Insecure Session Cookies Challenge 1:
 
-![image](resources/cookie-1.png)
+![image](docs/cookie-1.png)
 
 
 
 Insecure Session Cookies 2:
 
-![image](resources/cookie-2.png)
+![image](docs/cookie-2.png)
 
 
 Example SQL injection level:
 
-![image](resources/SQLI.png)
+![image](docs/SQLI.png)
 
 
 Server Side Template Injection Challenge:
 
-![image](resources/SSTI.png)
+![image](docs/SSTI.png)
 
 XXE Challenge:
 
-![image](resources/xxe.png)
+![image](docs/xxe.png)
 
 **R6)**
 
 **Screenshots of your Trello board throughout the duration of the project**
 
-![image](resources/trello-1.png)
+![image](docs/trello-1.png)
 
-![image](resources/trello-2.png)
+![image](docs/trello-2.png)
 
-![image](resources/trello-3.png)
+![image](docs/trello-3.png)
