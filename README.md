@@ -7,7 +7,7 @@ https://trello.com/b/QnpZosBC/leaky-flask
 Navigate to:
 http://3.88.53.207:4000/
 
-There are two cowrking challenges: SQL injection and Server Side Template Injection.
+There are two working challenges: SQL injection and Server Side Template Injection.
 
 The SQL injection challenge requires an authorisation bypass to login as the admin users. Upon successfully loging in, you will then be taken to a new level with some SQL characters blacklisted, making the challenge harder. There are a number of levels to complete.
 
