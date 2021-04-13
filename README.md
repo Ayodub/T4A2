@@ -144,7 +144,7 @@ Next, we need to check that on the next levels the blacklisted characters will n
 
 ![image](docs/1.SQLi_banned.png)
 
-![image](docs/SQLi_banned_pass.png)
+![image](docs/1.SQLi_banned_pass.png)
 
 We were not allowed to use the payload with an = sign
 
