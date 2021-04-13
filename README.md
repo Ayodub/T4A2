@@ -160,6 +160,6 @@ The name bob is simply printed to the card
 
 Now we will check what happens if we use a valid SSTI payload such as {{config.items()}}
 
-![image](docs/2.SSTI_config items.png)
+![image](docs/2.SSTI_config_items.png)
 
 ![image](docs/2.SSTI_config_items_pass.png)
