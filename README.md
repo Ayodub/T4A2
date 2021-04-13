@@ -132,7 +132,9 @@ XXE Challenge:
 
 ![image](docs/1.SQLi_pass.png)
 
-We successfuly bypassed the login
+We successfuly bypassed the login.
+
+Now we will check that we can not pass the login by entering any text or generic username:
 
 ![image](docs/1.SQLi_generic_user.png)
 
