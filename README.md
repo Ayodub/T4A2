@@ -122,3 +122,22 @@ XXE Challenge:
 ![image](docs/trello-2.png)
 
 ![image](docs/trello-3.png)
+
+
+**User Tests**
+
+SQL injection: Only one user exists in the database, and to bypass authentication we will need to use SQL injection. We will test for 3 things. First, a valid SQL injection such as "admin' or 1=1 --" should progress us to the next level, while any non-SQL injection should not:
+
+![image](docs/1.SQLi.png)
+
+![image](docs/1.SQLi_pass.png)
+
+![image](docs/1.SQLi_generic_user.png)
+
+![image](docs/1.SQLi_generic_user_pass.png)
+
+Next, we need to check that on the next levels the blacklisted characters will not be allowed through. We will test this using the same payload as before, which should be blocked due to using an = sign:
+
+![image](docs/1.SQLi_banned_characters.png)
+
+![image](docs/SQLi_banned_characters_pass.png)
