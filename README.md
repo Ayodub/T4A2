@@ -165,3 +165,5 @@ Now we will check what happens if we use a valid SSTI payload such as {{config.i
 
 
 ![image](docs/2.SSTI_config_items_pass.png)
+
+The payload is executed by the server printing the configuration items to the screen.
