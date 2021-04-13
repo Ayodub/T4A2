@@ -154,6 +154,7 @@ First we need to test what happens when normal input is inserted into the form:
 
 ![image](docs/2.SSTI_user.png)
 
+
 ![image](docs/2.SSTI_user_pass.png)
 
 The name bob is simply printed to the card
@@ -161,5 +162,6 @@ The name bob is simply printed to the card
 Now we will check what happens if we use a valid SSTI payload such as {{config.items()}}
 
 ![image](docs/2.SSTI_config_items.png)
+
 
 ![image](docs/2.SSTI_config_items_pass.png)
