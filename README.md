@@ -126,18 +126,40 @@ XXE Challenge:
 
 **User Tests**
 
-SQL injection: Only one user exists in the database, and to bypass authentication we will need to use SQL injection. We will test for 3 things. First, a valid SQL injection such as "admin' or 1=1 --" should progress us to the next level, while any non-SQL injection should not:
+**SQL injection**: Only one user exists in the database, and to bypass authentication we will need to use SQL injection. We will test for 3 things. First, a valid SQL injection such as "admin' or 1=1 --" should progress us to the next level, while any non-SQL injection should not:
 
 ![image](docs/1.SQLi.png)
 
 ![image](docs/1.SQLi_pass.png)
 
+We successfuly bypassed the login
+
 ![image](docs/1.SQLi_generic_user.png)
 
 ![image](docs/1.SQLi_generic_user_pass.png)
 
+We did not successfully bypass the login using a generic username.
+
 Next, we need to check that on the next levels the blacklisted characters will not be allowed through. We will test this using the same payload as before, which should be blocked due to using an = sign:
 
-![image](docs/1.SQLi_banned_characters.png)
+![image](docs/1.SQLi_banned.png)
 
-![image](docs/SQLi_banned_characters_pass.png)
+![image](docs/SQLi_banned_pass.png)
+
+We were not allowed to use the payload with an = sign
+
+**Server-Side Template Injection**
+
+First we need to test what happens when normal input is inserted into the form:
+
+![image](docs/2.SSTI_user.png)
+
+![image](docs/2.SSTI_user_pass.png)
+
+The name bob is simply printed to the card
+
+Now we will check what happens if we use a valid SSTI payload such as {{config.items()}}
+
+![image](docs/2.SSTI_config items.png)
+
+![image](docs/2.SSTI_config_items_pass.png)
