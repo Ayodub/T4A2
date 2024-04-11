@@ -17,7 +17,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask import Flask, jsonify, g, flash, redirect, url_for, session, request, make_response, render_template_string,render_template
 
-
+#Need to update challenges re:pickle vulnerabilities
 
 DATABASE_NAME = 'game'
 
