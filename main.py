@@ -44,7 +44,7 @@ class User(db.Model):
 def index():
     return render_template("main.html")
 
-
+#XXE needs more development
 @app.route('/xxe', methods = ['POST', 'GET'])
 def xml():
     parsed_xml = None
