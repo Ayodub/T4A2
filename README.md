@@ -1,6 +1,3 @@
-Link to Trello Board:
- https://trello.com/b/QnpZosBC/leaky-flask
-
 
 **R1)**
 
